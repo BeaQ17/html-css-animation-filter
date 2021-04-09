@@ -145,7 +145,7 @@
 
 /* es 5 */
 .ex-5-square {
-    transition: 1s;
+    transition: 0.5s;
 }
 .ex-5-square:hover {
     transform: scale(2);
@@ -153,3 +153,51 @@
 .ex-5-square:active {
     transform: scale(.5);
 }
+
+/* es 6 */
+.ex-6-img{
+    transition: 1s;
+}
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+
+/* es 7 */
+.ex-7-img {
+    transition: 2s;
+}
+.ex-7-img:hover {
+    filter: grayscale(.5) sepia(.5);
+}
+
+/* es 8 */
+.ex-8-img {
+    transition: 2s;
+}
+.ex-8-img:hover {
+    filter: grayscale(0.5) sepia(0.5);
+    border-radius: 20px;
+}
+
+/* es 9 */
+.ex-9-img {
+    transition: 2s;
+}
+.ex-9-img:hover {
+    filter: grayscale(.6) sepia(.5);
+    border-radius: 20px;
+    transform: scale(1.5);
+}
+
+/* es 10 */
+.ex-10-icon {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {  /* <- for many steps of animation */
+    0% {
+        transform: rotate(1turn);
+    }
+}
+
+/* es 11 */
